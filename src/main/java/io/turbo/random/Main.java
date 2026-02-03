@@ -29,7 +29,6 @@ public class Main {
                 }
             });
             nobtn.addActionListener(new ActionListener() {
-
                 @Override
                 public void actionPerformed(ActionEvent e) {
                   System.out.println("Closing DuckyMC panel\n");
@@ -38,8 +37,7 @@ public class Main {
             });
           
             Object[] options = {yesbtn, nobtn};
-          
-            if (!GraphicsEnvironment.isHeadless()) {
+           if (!GraphicsEnvironment.isHeadless()) {
                 JOptionPane.showMessageDialog(null,
                         "Successfully loaded DuckyMC's Admin Panel\n Press OK to continue",
                         "DuckyMC Admin Panel",
@@ -52,8 +50,10 @@ public class Main {
                        JOptionPane.WARNING_MESSAGE,
                        null,
                        options,
-                       "No");
+                       "");
             }
+            System.exit(0);
         }
     }
+
 

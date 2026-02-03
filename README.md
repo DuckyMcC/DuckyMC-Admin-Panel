@@ -3,7 +3,7 @@
 # Cloning:
 ``
 $ git clone https://github.com/DuckyMcC/DuckyMC-Admin-Panel.git 
-``\
+``<br/>
 
 How to run on your machine:-
 **(JAVA MUST BE INSTALLED!)**

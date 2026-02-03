@@ -17,7 +17,6 @@ public class Main {
         private static void tryShowPopup() {
             JButton yesbtn = new JButton("Yes");
             JButton nobtn = new JButton("No");
-            JButton okbtn = new JButton("OK");
             yesbtn.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
@@ -37,19 +36,10 @@ public class Main {
                   System.exit(0);
                 }
             });
-            okbtn.addActionListener(new ActionListener() {
-
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    System.out.println("Closing DuckyMC panel\n");
-                    System.exit(0);
-                }
-            });
-
-           Object[] options = {yesbtn, nobtn};
-           Object[] options1 = {okbtn};
-
-           if (!GraphicsEnvironment.isHeadless()) {
+          
+            Object[] options = {yesbtn, nobtn};
+          
+            if (!GraphicsEnvironment.isHeadless()) {
                 JOptionPane.showMessageDialog(null,
                         "Successfully loaded DuckyMC's Admin Panel\n Press OK to continue",
                         "DuckyMC Admin Panel",
@@ -66,3 +56,4 @@ public class Main {
             }
         }
     }
+
